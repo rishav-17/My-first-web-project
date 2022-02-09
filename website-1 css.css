@@ -1,0 +1,110 @@
+/* 
+primary font: lato
+secondary font: roboto condensed
+
+dark blue- rgb(25, 99, 209)
+light blue- rgb(100, 153, 232)
+bold orange- rgb(232, 139, 39)
+lighter orange-rgb(235, 174, 108)
+font-family: 'Rowdies', cursive;
+font-family: 'Source Serif 4', sans-serif;
+*/
+
+img{
+    width: 400px;
+    height: 200px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 50px;
+}
+
+p{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: bolder;
+}
+
+li{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: bolder;
+}
+
+h1{
+    font-family: 'Rowdies', cursive;
+    font-weight: 200;
+}
+
+h2{
+    font-family: 'Rowdies', cursive;
+    font-weight: 200;
+}
+
+.image-grid{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid>img{
+    margin: 10px;
+}
+
+#image-1{
+    float: right;
+    margin: 15px;
+    height: 300px;
+}
+
+.post{
+    border: 2px solid rgb(232, 139, 39);
+    margin: 10px;
+    padding: 10px;
+}
+
+.post-title{
+    margin: 5px;
+}
+
+body{
+    background-color:rgba(100, 153, 232, 0.5);
+}
+
+.sidebar{
+    background: rgba(245, 184, 118, 0.801);
+}
+
+.post > a{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(25, 99, 209) ;
+    transition: 0.2s all;
+}
+
+.post > a:hover {
+    color: rgb(9, 50, 112);
+}
+
+img:hover{
+    height: 250px;
+    width:500px;
+    transition: 1s all ;
+}
+
+.content{
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+
+.sidebar{
+    animation-name:fade-in;
+    animation-duration: 5s;
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
